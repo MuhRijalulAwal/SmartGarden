@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.smartgarden.R
@@ -21,7 +22,6 @@ class  CommunityFragment : Fragment() {
     }
 
    private lateinit var recyclerView: RecyclerView
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -44,7 +44,25 @@ class  CommunityFragment : Fragment() {
             intent.putExtra(INTENT_PARCELABLE, it)
             startActivity(intent)
         }
+
+        val adapter = ListCommunityAdapter(communityArrayList) {
+            val intent = Intent(context, DetailCommunityActivity::class.java)
+            intent.putExtra(INTENT_PARCELABLE, it)
+            startActivity(intent)
+        }
+
+        recyclerView.adapter = adapter
+
+        val searchView = view.findViewById<SearchView>(R.id.searchView)
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                adapter.filter(newText.orEmpty())
+                return true
+            }
+        })
     }
-
-
 }

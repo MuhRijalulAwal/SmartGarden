@@ -9,7 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.smartgarden.R
 import com.example.smartgarden.dummy.Community
 
-class ListCommunityAdapter(private val listCommunity: ArrayList<Community>, val listener: (Community) -> Unit): RecyclerView.Adapter<ListCommunityAdapter.ListViewHolder>() {
+class ListCommunityAdapter(private val listCommunity: ArrayList<Community>,
+                           private var originalList: ArrayList<Community> = listCommunity.toMutableList() as ArrayList<Community>,
+                           private var filteredList: ArrayList<Community> = originalList.toMutableList() as ArrayList<Community>,
+                           val listener: (Community) -> Unit): RecyclerView.Adapter<ListCommunityAdapter.ListViewHolder>() {
     class ListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val tvUser: TextView = itemView.findViewById(R.id.tv_user_community)
         val imgPhoto: ImageView = itemView.findViewById(R.id.img_photo_community)
@@ -44,5 +47,12 @@ class ListCommunityAdapter(private val listCommunity: ArrayList<Community>, val 
         holder.tvDesc.text = desc
         itemCount
     }
+
+    fun filter(query: String) {
+        filteredList.clear()
+        filteredList.addAll(originalList.filter { it.title.contains(query, ignoreCase = true) })
+        notifyDataSetChanged()
+    }
+
 
 }
