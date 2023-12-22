@@ -2,12 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.SmartGarden" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/white</item>
-        <item name="colorPrimary">@color/lightgreen</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorSecondary">@color/md_theme_light_secondary</item>
-        <item name="colorOnSecondary">@color/white</item>
-        <item name="colorSecondaryContainer">@color/md_theme_light_secondaryContainer</item>
-        <item name="colorOnSecondaryContainer">@color/md_theme_light_onSecondaryContainer</item>
+        <item name="colorPrimary" tools:targetApi="l">@color/lightgreen</item>
+        <item name="colorPrimaryVariant">@color/lightgreen</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+
     </style>
 
     <style name="Theme.SmartGarden" parent="Base.Theme.SmartGarden" />

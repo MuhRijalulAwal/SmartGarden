@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="white2">#D6D6D6</color>
+    <color name="white2">#E1E1E1</color>
     <color name="lightgreen">#28DF99</color>
     <color name="lightyellow">#F6F7D4</color>
     <color name="md_theme_light_primary">#B81F27</color>
@@ -13,4 +13,5 @@
     <color name="md_theme_light_onSecondary">#FFFFFF</color>
     <color name="md_theme_light_secondaryContainer">#FFDAD7</color>
     <color name="md_theme_light_onSecondaryContainer">#2C1514</color>
+    <color name="white3">#72FFFFFF</color>
 </resources>

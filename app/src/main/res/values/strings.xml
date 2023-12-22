@@ -2,8 +2,8 @@
     <string name="app_name">Smart Garden</string>
     <string name="title_welcome_page">Welcome</string>
     <string name="title_welcome_page1">Smart Plant Care Assistant</string>
-    <string name="login">LOGIN</string>
-    <string name="signup">REGISTER</string>
+    <string name="login">Login</string>
+    <string name="signup">Register</string>
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -14,7 +14,7 @@
     <string name="inputUsername">masukkan username Anda</string>
     <string name="tittle_splash_page">Healthy Plants \n Beautiful Environment</string>
     <string name="tittle_splash_page1">Have a nice day!</string>
-    <string name="title_home">Welcome\nBangkit !</string>
+    <string name="title_home">Welcome</string>
     <string name="search">Search</string>
     <string name="humadity">Humadity</string>
     <string name="humadity_percent">Percent</string>
@@ -55,6 +55,15 @@
     <string name="change_profile">Change Profile</string>
     <string name="save">Save</string>
     <string name="add_button">Add Button</string>
+    <string name="tittle_signup_page">Sign Up</string>
+    <string name="temp_celcius_yogyakarta">31°C</string>
+    <string name="humadity_percent_yogyakarta">80%</string>
+    <string name="yogyakarta">Yogyakarta</string>
+    <string name="camera_x">Camera X</string>
+    <string name="gallery">Galeri</string>
+    <string name="upload">Upload</string>
+    <string name="tips_perawatan">Tips perawatan yang dapat Anda ikuti:\nPencahayaan:\nJanda bolong menyukai sinar matahari yang terang, namun hindari paparan langsung sinar matahari yang terik, terutama sinar matahari tengah hari.\nTempatkan tanaman di tempat yang mendapatkan cahaya indirek atau sebagian teduh.</string>
+    <string name="penjelasan">Merupakan jenis tanaman hias tropis yang sering digunakan sebagai hiasan interior rumah bergaya Skandinavia atau minimalis.\nKeunikan tanaman ini adalah memiliki daun mengilap lebar berwarna hijau pekat berpola seperti bentuk hati.</string>
 
     <string-array name="data_title_community">
         <item>Bagaimana Cara Mengatasinya?</item>
